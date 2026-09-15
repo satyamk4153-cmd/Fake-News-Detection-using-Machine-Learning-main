@@ -1,0 +1,35 @@
+{
+  "random_seed": 42,
+  "data_splits": {
+    "train_ratio": 0.70,
+    "val_ratio": 0.15,
+    "test_ratio": 0.15
+  },
+  "cv_folds": 5,
+  "preprocessing": {
+    "lowercase": true,
+    "strip_html": true,
+    "normalize_unicode": true,
+    "max_features_word": 10000,
+    "max_features_char": 5000,
+    "ngram_range_word": [1, 2],
+    "ngram_range_char": [2, 4]
+  },
+  "calibration_method": "isotonic",
+  "datasets": [
+    {
+      "name": "ISOT-Credibility-Benchmark",
+      "version": "v1.0",
+      "license": "Creative Commons Attribution 4.0 International",
+      "source": "University of Victoria ISOT Dataset",
+      "language": "en"
+    },
+    {
+      "name": "LIAR-Credibility-Benchmark",
+      "version": "v1.0",
+      "license": "CC BY-SA 4.0",
+      "source": "William Yang Wang (UCSB) LIAR Dataset",
+      "language": "en"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "active_version": "ensemble-v1.0",
+  "uncertainty": {
+    "band_low": 0.35,
+    "band_high": 0.65,
+    "min_model_agreement": 0.60,
+    "max_ood_score": 0.75
+  },
+  "input_quality": {
+    "min_article_length": 50,
+    "max_article_length": 50000,
+    "min_headline_length": 15,
+    "max_headline_length": 500,
+    "supported_languages": ["en"]
+  },
+  "models": {
+    "logistic_regression": {
+      "name": "TF-IDF Logistic Regression",
+      "version": "lr-v1.0",
+      "weight": 0.25,
+      "features": "word_char_tfidf"
+    },
+    "linear_svm": {
+      "name": "Calibrated Linear SVM",
+      "version": "svm-v1.0",
+      "weight": 0.25,
+      "features": "word_tfidf"
+    },
+    "gradient_boosting": {
+      "name": "HistGradientBoosting Linguistic Classifier",
+      "version": "gb-v1.0",
+      "weight": 0.20,
+      "features": "linguistic_structural"
+    },
+    "transformer": {
+      "name": "Sequence Contextual Classifier",
+      "version": "distilbert-credibility-v1.0",
+      "weight": 0.30,
+      "features": "token_embeddings"
+    }
+  }
+}

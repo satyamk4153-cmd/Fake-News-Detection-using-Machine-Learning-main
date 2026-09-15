@@ -1,0 +1,18 @@
+{
+  "truthlens_credibility_benchmark:v1.0": {
+    "dataset_name": "truthlens_credibility_benchmark",
+    "version": "v1.0",
+    "source": "Curated Journalistic & Misinformation Benchmark Corpus (Reuters, AP, Nature, Snopes/ISOT patterns)",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "download_date": "2026-09-15",
+    "record_count": 39,
+    "label_mapping": {
+      "misleading": 0,
+      "credible": 1
+    },
+    "language": "en",
+    "preprocessing_version": "text_cleaner_v1.0",
+    "checksum": "b8300a3f46ac5e5489e5c38aba8a31c969431fe7094de649151d5adb380fa1fa",
+    "description": "Leakage-controlled news credibility corpus with balanced credible and deceptive articles."
+  }
+}

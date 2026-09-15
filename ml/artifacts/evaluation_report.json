@@ -1,0 +1,127 @@
+{
+  "logistic_regression": {
+    "model_name": "TF-IDF Logistic Regression",
+    "model_version": "lr-v1.0",
+    "dataset_name": "truthlens_benchmark_v1.0",
+    "sample_count": 6,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "macro_f1": 1.0,
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "brier_score": 0.219,
+    "expected_calibration_error": 0.0161,
+    "confusion_matrix": [
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        3
+      ]
+    ]
+  },
+  "linear_svm": {
+    "model_name": "Calibrated Linear SVM",
+    "model_version": "svm-v1.0",
+    "dataset_name": "truthlens_benchmark_v1.0",
+    "sample_count": 6,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "macro_f1": 1.0,
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "brier_score": 0.0182,
+    "expected_calibration_error": 0.0977,
+    "confusion_matrix": [
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        3
+      ]
+    ]
+  },
+  "gradient_boosting": {
+    "model_name": "HistGradientBoosting Linguistic Classifier",
+    "model_version": "gb-v1.0",
+    "dataset_name": "truthlens_benchmark_v1.0",
+    "sample_count": 6,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "macro_f1": 1.0,
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "brier_score": 0.0,
+    "expected_calibration_error": 0.0001,
+    "confusion_matrix": [
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        3
+      ]
+    ]
+  },
+  "transformer": {
+    "model_name": "Sequence Contextual Classifier",
+    "model_version": "contextual-linear-v1.0",
+    "dataset_name": "truthlens_benchmark_v1.0",
+    "sample_count": 6,
+    "accuracy": 0.8333,
+    "precision": 0.75,
+    "recall": 1.0,
+    "f1": 0.8571,
+    "macro_f1": 0.8286,
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "brier_score": 0.2294,
+    "expected_calibration_error": 0.0063,
+    "confusion_matrix": [
+      [
+        2,
+        1
+      ],
+      [
+        0,
+        3
+      ]
+    ]
+  },
+  "ensemble": {
+    "model_name": "Calibrated Multi-Model Ensemble",
+    "model_version": "ensemble-v1.0",
+    "dataset_name": "truthlens_benchmark_v1.0",
+    "sample_count": 6,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "macro_f1": 1.0,
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "brier_score": 0.0026,
+    "expected_calibration_error": 0.0357,
+    "confusion_matrix": [
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        3
+      ]
+    ]
+  }
+}
